@@ -1,0 +1,286 @@
+@import '_mixin.scss';
+@import '_var.scss';
+
+.nav {
+  margin-top: -8px;
+}
+
+.nav__list {
+  @include list-reset;
+  display: flex;
+  font-size: 14px;
+  color: $color-gray;
+}
+
+.nav__list__item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.media-filter {
+  display: none;
+}
+
+.contant {
+  padding-top: 32px;
+  padding-bottom: 70px;
+}
+
+.contant__grid {
+  display: grid;
+  grid-template-columns: 296px 1fr;
+  grid-gap: $gap;
+}
+
+.contant__grid__filter {
+  display: flex;
+  flex-direction: column;
+
+  .checkbox-text {
+    position: relative;
+    padding-left: 32px;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .checkbox-text:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 18px;
+    border: 1px solid #A65CF0;
+    border-radius: 3px;
+    transition: border-color 0.3s ease-in-out;
+  }
+}
+
+.contant__grid__filter__title {
+  margin-bottom: 23px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-grey-shade;
+}
+
+.title-price {
+  margin-bottom: -3px;
+}
+
+.check-label {
+  margin-bottom: 14px;
+}
+
+.contant__grid__filter__check {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.check-color {
+  margin-bottom: 72px;
+}
+
+.oxford {
+  padding: 32px 30px;
+  padding-top: 226px;
+  background-color: $color-black;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/oxford.jpg);
+}
+
+.oxford-title {
+  max-width: 199px;
+  margin-bottom: 12px;
+  font-family: 'PlayfairDisplay';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 20px;
+  color: #D5B986;
+}
+
+.oxford-span {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-gray
+}
+
+.oxford-btn {
+  padding: 0;
+  text-align: left;
+  min-width: 115px;
+  min-height: 22px;
+  color: $color-primary;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/svg/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-x: 85px;
+  background-size: 22px 22px;
+}
+
+.catalog-title {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.catalog-grid-media {
+  display: none;
+}
+
+.tabs-btn-item-3 {
+  display: none;
+}
+
+.catalog-grid {
+  display: none;
+  margin-bottom: 34px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gap;
+}
+
+.contant__grid__catalog__item {
+  padding: 207px 30px 30px;
+
+  .grid-price {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: $color-grey-shade;
+  }
+}
+
+.contant__grid__catalog__item-1 {
+  background-image: url(../img/rating-1.png);
+  background-position-y: 109px;
+}
+
+.contant__grid__catalog__item-2 {
+  background-image: url(../img/rating-2.png);
+  background-position-y: 90px;
+
+  .grid-title {
+    max-width: 235px;
+  }
+}
+
+.contant__grid__catalog__item-3 {
+  background-image: url(../img/rating-3.png);
+  background-position-y: 88px;
+}
+
+.contant__grid__catalog__item-4 {
+  background-image: url(../img/rating-4.png);
+  background-position-y: 66px;
+}
+
+.contant__grid__catalog__item-5 {
+  background-image: url(../img/rating-5.png);
+  background-position-y: 74px;
+}
+
+.contant__grid__catalog__item-6 {
+  background-image: url(../img/rating-6.png);
+  background-position-y: 74px;
+}
+
+.contant__grid__catalog__item-7 {
+  background-image: url(../img/rating-7.png);
+  background-position-y: 61px;
+}
+
+.contant__grid__catalog__item-8 {
+  background-image: url(../img/rating-8.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-9 {
+  background-image: url(../img/rating-9.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-10 {
+  background-image: url(../img/rating-10.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-11 {
+  background-image: url(../img/rating-11.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-12 {
+  background-image: url(../img/rating-12.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-13 {
+  background-image: url(../img/rating-13.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-14 {
+  background-image: url(../img/rating-14.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-15 {
+  background-image: url(../img/rating-15.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-16 {
+  background-image: url(../img/rating-16.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-17 {
+  background-image: url(../img/rating-17.png);
+  background-position-y: 67px;
+}
+
+.contant__grid__catalog__item-18 {
+  background-image: url(../img/rating-18.png);
+  background-position-y: 67px;
+}
+
+
+.catalog-grid.catalog-grid--active {
+  display: grid;
+}
+
+
+.tabs-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-btn-item {
+  padding: 5px 9px;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.tabs-btn-item--active {
+  color: $color-white;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  background-color: $color-primary;
+}
+
+.tabs-btn-item:not(:last-child) {
+  margin-right: 16px;
+}
